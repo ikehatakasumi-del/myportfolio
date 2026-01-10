@@ -8,7 +8,7 @@ const Home = () => {
     return (
     <>
     <main>
-        <section className="works">
+        <section className="works" id="works">
             <h2>Works</h2>
             <div className="works-list">
             {works.map((work) => (
@@ -24,7 +24,7 @@ const Home = () => {
             ))}
             </div>
         </section>
-        <section className="skills">
+        <section className="skills" id="skills">
             <h2>Skills</h2>
             <div className="skills-list">
                 <div className="skills-card">
@@ -56,7 +56,7 @@ const Home = () => {
                 </div>
             </div>
         </section>
-        <section className="about">
+        <section className="sabout" id="about">
             <h2>About me</h2>
             <div className="about-inner">
                 <div className="about-text">
