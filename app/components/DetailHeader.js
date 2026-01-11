@@ -1,6 +1,6 @@
 const DetailHeader = () => {
     return (
-        <p>作品詳細ページ</p>
+        <h3>作品詳細ページ</h3>
     );
 };
 export default DetailHeader;

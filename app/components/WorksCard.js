@@ -6,8 +6,8 @@ const WorksCard = ({work}) => {
             <Image
             src={work.image}
             alt={work.title}
-            width={500}
-            height={400}
+            width={400}
+            height={300}
             />
             <p>{work.title}</p>
             
