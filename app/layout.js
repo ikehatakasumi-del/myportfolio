@@ -1,5 +1,5 @@
-import Footer from './components/Footer';
-import Header from './components/Header';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import './globals.css';
 
 export const metadata = {
@@ -28,9 +28,7 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"/>
       </head>
       <body suppressHydrationWarning>
-        <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );
