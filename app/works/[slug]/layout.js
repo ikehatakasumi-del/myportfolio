@@ -6,7 +6,7 @@ export default function DetailLayout({ children }) {
   return (
     <>
       <DetailHeader /> {/* 詳細ページ専用のヘッダー */}
-      {children}       {/* ここに詳細ページ（page.js）の中身が入ります */}
+      {children}       {/* ここに詳細ページ（page.js）の中身が入る */}
     </>
   );
 }
