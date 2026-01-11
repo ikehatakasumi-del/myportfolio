@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+
 import { works } from "../works-data";
+
 import WorksCard from "../components/WorksCard";
 // "use client";
 
@@ -9,24 +11,28 @@ const Home = () => {
     <>
     <main>
         <section className="works" id="works">
-            <h2>Works</h2>
-            <div className="works-list">
-            {works.map((work) => (
-                <Link
-                key={work.slug}
-                href={`/works/${work.slug}`}
-                className="works-item"
-                >
-                {/* <div className="dummy">No Image</div> */}
-                <WorksCard key={work.slug} work={work}/>
-                {/* <h3>{work.title}</h3> */}
-                </Link>
-            ))}
+            <div className="container">
+                <h2>Works</h2>
+                <div className="works-list">
+                {works.map((work) => (
+                    <Link
+                    key={work.slug}
+                    href={`/works/${work.slug}`}
+                    className="works-item"
+                    >
+                    {/* <div className="dummy">No Image</div> */}
+                    <WorksCard key={work.slug} work={work}/>
+                    {/* <h3>{work.title}</h3> */}
+                    </Link>
+                ))}
+                </div>
             </div>
         </section>
+
         <section className="skills" id="skills">
-            <h2>Skills</h2>
-            <div className="skills-list">
+            <div className="container">
+                <h2>Skills</h2>
+                <div className="skills-list">
                 <div className="skills-card">
                     <h3>HTML/CSS</h3>
                     <p>
@@ -55,10 +61,13 @@ const Home = () => {
                     </p>
                 </div>
             </div>
+            </div>
         </section>
-        <section className="sabout" id="about">
-            <h2>About me</h2>
-            <div className="about-inner">
+        
+        <section className="about" id="about">
+            <div className="container">
+                <h2>About me</h2>
+                <div className="about-inner">
                 <div className="about-text">
                     <p><strong>前職では看護師として勤務していました。</strong></p>
                     <p>
@@ -80,6 +89,7 @@ const Home = () => {
                     </p>
                 </div>
                 <Image src="/Image/mimi.jpg" alt="聴診器の画像" width={420} height={330}/>
+            </div>
             </div>
         </section>
     </main>

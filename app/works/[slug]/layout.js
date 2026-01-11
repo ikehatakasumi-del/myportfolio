@@ -1,3 +1,4 @@
+
 // app/works/[slug]/layout.js
 import DetailHeader from "@/app/components/DetailHeader";
 
