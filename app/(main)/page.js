@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { works } from "./works-data";
-import WorksCard from "./components/WorksCard";
+import { works } from "../works-data";
+import WorksCard from "../components/WorksCard";
 // "use client";
 
 const Home = () => {
