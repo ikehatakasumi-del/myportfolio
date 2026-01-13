@@ -3,7 +3,7 @@ import Link from "next/link";
 // import Image from "next/image";
 const Header = () => {
     return (
-    <header className="header" id="top">
+    <header className="header">
         <div className="header-text">
             <h1>IKEHATA KASUMI</h1>
             <p>
@@ -12,7 +12,7 @@ const Header = () => {
             </p>
             <nav className="nav-list">
                 <ul>
-                    <li><a href="#top">Top</a></li>
+                    {/* <li><a href="#top">Top</a></li> */}
                     <li><a href="#works">Works</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#about">About</a></li>
