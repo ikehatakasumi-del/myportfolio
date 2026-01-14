@@ -1,3 +1,6 @@
+ポートフォリオサイト
+vercelUrl　"https://myportfolio-two-mu-16.vercel.app/"
+
 ポートフォリオサイト工夫した点
 worksの詳細ページに動的ルーティングを採用し効率的なページ生成を行っています。
 
