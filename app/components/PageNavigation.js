@@ -1,28 +1,29 @@
 import React from "react";
 import { works } from "../works-data";
+import Link from "next/link";
 
 const PageNavigation = ({currentSlug}) => {
     const currentIndex = works.findIndex((work) => work.slug === currentSlug);
-    
+
     const prevWork = works[currentIndex - 1];
     const nextWork = works[currentIndex + 1];
-    
+
     return(
     <div style={{display:"flex", flexWrap:"wrap",justifyContent:"center",gap:"16px"}}>
         {prevWork ? (
-        <a href={`/works/${prevWork.slug}`} className="nav-btn">
+        <Link href={`/works/${prevWork.slug}`} className="nav-btn">
             ← {prevWork.title}
-        </a>
+        </Link>
         ):(
             <span className="nav-btn" style={{visibility:"hidden"}}></span>
         )}
-        <a href="/" className="nav-btn">
+        <Link href="/" className="nav-btn">
             Home
-        </a>
+        </Link>
         {nextWork ? (
-        <a href={`/works/${nextWork.slug}`} className="nav-btn">
+        <Link href={`/works/${nextWork.slug}`} className="nav-btn">
             {nextWork.title} →
-        </a>
+        </Link>
         ):(
             <span className="nav-btn" style={{visibility:"hidden"}}></span>
         )}
