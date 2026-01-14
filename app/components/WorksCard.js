@@ -1,4 +1,3 @@
-// import Link from "next/link"
 import Image from "next/image";
 const WorksCard = ({work}) => {
     return (
@@ -10,8 +9,6 @@ const WorksCard = ({work}) => {
             height={300}
             />
             <p>{work.title}</p>
-            
-            {/* <Link href={`/works/${work.slug}`}></Link> */}
         </div>
     );
 };

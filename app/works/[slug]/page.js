@@ -1,6 +1,5 @@
 import PageNavigation from "@/app/components/PageNavigation";
 import { works } from "@/app/works-data";
-import { notFound } from "next/navigation";
 
 export default async function ProjectDetail({ params }) {
   const { slug } = await params;
@@ -13,12 +12,12 @@ export default async function ProjectDetail({ params }) {
   return (
     <main style={{ padding: "20px" }}>
       <h1>{project.title}</h1>
-      
+
       {project.image && (
-        <img 
-          src={project.image} 
-          alt={project.title} 
-          style={{ maxWidth: "100%", height: "auto", marginTop: "20px" }} 
+        <img
+          src={project.image}
+          alt={project.title}
+          style={{ maxWidth: "100%", height: "auto", marginTop: "20px"}}
         />
       )}
 

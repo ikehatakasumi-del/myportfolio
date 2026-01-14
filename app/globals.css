@@ -192,11 +192,50 @@ h4 {
 }
 
 .nav-btn{
-    padding:8px 20px; 
+    padding:8px 20px;
     border-radius:8px;
     background: #E2E8F0;
     color:#475569;
     margin-bottom:20px;
     margin-top: 30px;
     box-shadow: #334155;
+}
+.nav-btn:hover {
+    color: #D1A27A;
+}
+
+/* メディアクエリ */
+@media screen and (min-width:480px){
+
+}
+@media screen and (min-width:768px) and (max-width:1024){
+    .skills-list {
+    /* display: flex; */
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+    }
+    .skills-card {
+    padding: 30px;
+    width: 360px;
+    }
+    .skills-card p {
+    font-size: 22px;
+    letter-spacing: 2px;
+    }
+    h3 {
+    font-size: 30px;
+    }
+    h2 {
+        text-align: center;
+        margin: 0 0 50px 0;
+    }
+    .about img {
+        margin: auto;
+    }
+    .about-inner {
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: auto;
+}
 }
