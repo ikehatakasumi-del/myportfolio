@@ -1,3 +1,14 @@
+ポートフォリオサイト工夫した点
+worksの詳細ページに動的ルーティングを採用し効率的なページ生成を行っています。
+
+制作物データは一つの配列で一括管理しています。新しい制作物を追加する際も、コードを大幅に書き換えることなく簡単に追加・更新できる設計にしました。
+
+詳細ページからホームに戻ることなく、Prev　/　Next ボタンで前後の作品へ直接移動できるナビゲーションを実装しました。
+
+CSSメディアクエリを使用し、PC・タブレット・スマートフォンの各デバイスに最適化したレイアウトを構築しました。
+
+各worksの詳細ページには Vercel でデプロイした実際のアプリへのリンクを設置し、即座に動作確認ができるようにしています。
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
