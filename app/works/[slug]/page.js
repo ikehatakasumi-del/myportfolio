@@ -1,5 +1,6 @@
 import PageNavigation from "@/app/components/PageNavigation";
 import { works } from "@/app/works-data";
+import Link from "next/link";
 
 export default async function ProjectDetail({ params }) {
   const { slug } = await params;
@@ -17,20 +18,30 @@ export default async function ProjectDetail({ params }) {
         <img
           src={project.image}
           alt={project.title}
-          style={{ maxWidth: "100%", height: "auto", marginTop: "20px"}}
+          style={{maxWidth: "100%", height: "auto", marginTop: "20px"}}
         />
       )}
 
-      <div style={{ marginTop: "30px" }}>
+      <div style={{textAlign:"center",marginTop:"20px"}}>
+        {project.vercelUrl ? (
+          <Link href={project.vercelUrl} className="nav-btn" target="_blank">
+            アプリを見る
+          </Link>
+        ):(
+          <span style={{visibility:"hidden"}}></span>
+        )}
+      </div>
+
+      <div style={{marginTop:"30px"}}>
         <h4>概要</h4>
-        <p style={{ whiteSpace: "pre-wrap", lineHeight: "1.6" }}>
+        <p style={{whiteSpace:"pre-wrap",lineHeight:"1.6"}}>
           {project.description}
         </p>
       </div>
 
-      <div style={{ marginTop: "30px" }}>
+      <div style={{marginTop: "30px" }}>
         <h4>{project.contenttitle}</h4>
-        <p style={{ whiteSpace: "pre-wrap", lineHeight: "1.6" }}>
+        <p style={{whiteSpace: "pre-wrap", lineHeight: "1.6" }}>
           {project.content}
         </p>
       </div>

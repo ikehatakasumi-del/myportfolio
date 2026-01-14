@@ -7,6 +7,8 @@ export const works = [
     contenttitle:"工夫した点・学んだこと",
     content:"\n 1.localStorageを使い、永続化を実装した点 \n 2.編集モード用に状態を分け、UIとロジックを整理した点  \n 3.Enterキーで追加できるなど、使いやすさを意識した点",
     image:"/Image/Todo.png",
+    vercelUrl:"https://todolist-app-eta-bice.vercel.app/",
+    // githubUrl: ""
   },
   {
     slug: "project2",
