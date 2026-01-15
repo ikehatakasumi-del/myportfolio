@@ -130,6 +130,11 @@ h4 {
     font-size: 20px;
     /* text-decoration: none; */
 }
+.works-image {
+  width: 100%;    
+  height: auto; 
+  max-width: 400px;
+}
 
 /* skills */
 .skills {
@@ -205,9 +210,8 @@ h4 {
 }
 
 
-
 /* メディアクエリ */
-@media screen and (min-width:480) and (max-width:767){
+@media screen and (max-width:767){
     .header {
     padding: 0;
     margin-bottom: 70px;
@@ -220,8 +224,7 @@ h4 {
     }
     .header-text p {
     font-size: 12px;
-    margin-left: 60px;
-    margin-right: 26px;
+    margin-left: 30px;
     padding-top: 180px;
     }
 
@@ -252,11 +255,19 @@ h4 {
     }
     .about img {
         margin: auto;
+        width: 100%;
     }
     .about-inner {
     flex-wrap: wrap;
     max-width: 500px;
-    margin: auto;
+    /* margin: 0 auto; */
+}
+.about-inner p {
+    /* margin-left: 40px; */
+    margin: 0 auto; 
+}
+.nav-btn{
+    padding: 10px;
 }
 }
 @media screen and (min-width:768px) and (max-width:1024){

@@ -7,6 +7,7 @@ const WorksCard = ({work}) => {
             alt={work.title}
             width={400}
             height={300}
+            className="works-image"
             />
             <p>{work.title}</p>
         </div>

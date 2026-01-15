@@ -20,14 +20,6 @@ export const works = [
   },
   {
     slug: "project3",
-    title: "バナー",
-    description:"テストテストテストテスト",
-    contenttitle:"テストテスト",
-    content:"テストテストテスト",
-    image:"/Image/フランス料理.png",
-  },
-  {
-    slug: "project4",
     title: "本サイト",
     description:" Next.jsを使って、ページを移動できるポートフォリオサイトを作りました。\n トップページから制作物紹介のページに移動できるようになっており、実際のWebサイトのような構成を意識しました。\n コードを分けて書くことで、あとから内容を追加しやすい作りにしています。",
     contenttitle:"工夫した点・学んだこと",
