@@ -1,7 +1,8 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'My Portfolio',
+  title: "My Portfolio",
+  description: "私のポートフォリオサイトです。",
 };
 
 export default function RootLayout({ children }) {

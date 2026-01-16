@@ -63,7 +63,7 @@ const Home = () => {
             </div>
             </div>
         </section>
-        
+
         <section className="about" id="about">
             <div className="container">
                 <h2>About me</h2>
@@ -77,7 +77,7 @@ const Home = () => {
                         小さな変化に気づくことの重要性を学びました。<br/>
                     </p>
                     <p>
-                        現在は⚪︎⚪︎を目指して学習しています。<br/>
+                        現在はエンジニアを目指して学習しています。<br/>
                         看護師として培った<strong>「相手の立場に立って考える姿勢」</strong>は、<br/>
                         ユーザーにとって使いやすいUIを考える上でも<br/>
                         活かせると考えています。<br/>
