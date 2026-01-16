@@ -1,7 +1,7 @@
 import Image from "next/image";
 const WorksCard = ({work}) => {
     return (
-        <div>
+        <div className="works-thumbnail">
             <Image
             src={work.image}
             alt={work.title}
