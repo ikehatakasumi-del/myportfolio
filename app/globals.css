@@ -30,6 +30,7 @@ html, body {
 .header-text h1 {
     color: #334155;
     font-size: 76px;
+    margin-bottom: 90px;
     letter-spacing: 1rem;
     font-weight: bold;
     text-align: center;
@@ -216,6 +217,7 @@ h4 {
     color: white;
     background: #475569;
 }
+/* ↓これはメインの */
 .nav-check, .nav-open {
     display: none;
 }

@@ -12,7 +12,7 @@ const Header = () => {
                 </p>
                 {/* 隠しチェックボックス　ハンバーガー チェックボックスハック*/}
                 <input type="checkbox" id="nav-check" className="nav-check"/>
-                {/* ハンバーガーの最初の三本線 */}
+                {/* ハンバーガーの最初の三本線  forで中身とインプットをつなぐ*/}
                 <label htmlFor="nav-check" className="nav-open">
                     <span></span>
                     <span></span>
