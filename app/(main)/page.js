@@ -19,7 +19,7 @@ const Home = () => {
                     key={work.slug}
                     href={`/works/${work.slug}`}
                     className="works-item"
-                    style={{textDecoration:"none"}}
+                    style={{textDecoration:"none",color:"#64748B",fontWeight:"bold"}}
                     >
                     {/* <div className="dummy">No Image</div> */}
                     <WorksCard key={work.slug} work={work} />
