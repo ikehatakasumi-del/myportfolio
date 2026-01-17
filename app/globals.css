@@ -1,6 +1,5 @@
 /* ここから！！ */
 body {
-    /* background-color: white; */
     width: 100%;
     margin: 0 auto;
     font-family: 'Noto Sans JP', sans-serif;
@@ -12,19 +11,21 @@ html, body {
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 60px;
 }
 
 .header {
     display: flex;
-    justify-content: space-around;
-    /* align-items: flex-start; */
-    padding: 30px 60px;
-    /* background-color: #faf9f6; */
+    padding: 30px 0;
     /* background: linear-gradient(40deg, #e7e9ef, #8282e4); */
     position: relative;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-text {
@@ -72,7 +73,6 @@ html, body {
     text-decoration: none;
     color: #2F3537;
     font-size: 1rem;
-    /* font-weight: bold; */
     font-family: 'Playfair Display', sans-serif;
 }
 .nav-list ul li a:hover {
@@ -84,11 +84,12 @@ section {
     padding: 60px;
 }
 h2 {
-    margin: 30px 0 60px 40px;
+    margin: 0 0 60px 0;
     color: #64748B;
     font-size: 50px;
     letter-spacing: 3px;
     font-family: 'Playfair Display', sans-serif;
+    line-height: 1.2;
 }
 
 h3 {
@@ -102,7 +103,6 @@ h3 {
 h4 {
     font-size: 20px;
     text-align: center;
-    /* margin-left: 40px; */
     padding-bottom: 20px;
     color: #475569;
     border-bottom: 2px solid #E2E8F0;
@@ -114,11 +114,15 @@ h4 {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 .works-item {
-    width: 400px;
-    height: 380px;
+    /* width: 400px; */
+    /* max-width: none; */
+    width: calc((100% - 30px) / 2); /* (100% - gapの合計) / 列数 で計算 */
+    /* height: 380px; */
+    box-sizing: border-box;
+    height: auto;
     background: #FFFFFF;
     border-radius: 8px;
     border: 4px solid #E2E8F0;
@@ -132,11 +136,11 @@ h4 {
 .works-list p {
     text-align: center;
     font-size: 20px;
-    /* text-decoration: none; */
 }
 .works-image {
   width: 100%;
-  max-width: 400px;
+  height: 400px;
+  display: block;
 }
 
 /* skills */
@@ -145,14 +149,15 @@ h4 {
 }
 .skills-list {
     display: flex;
-    justify-content: center;
-    gap: 70px;
+    justify-content: flex-start;
+    gap: 20px;
     /* flex-wrap: wrap; */
 }
 .skills-card {
     background: #fff;
     padding: 30px;
-    width: 230px;
+    width: calc((100% - 40px) / 3); /* (100% - 20px * 2) / 3 */
+    /* width: 230px; */
     border: 6px solid #E2E8F0;
     border-radius: 8px;
 }
@@ -160,34 +165,34 @@ h4 {
     font-size: 14px;
     letter-spacing: 2px;
     color: #2F3537;
-    /* text-align: center; */
 }
+
 /* about */
-.about {
-    /* background: #faf7f2; */
-    padding: 80px 0;
-}
 .about h2 {
     margin-bottom: 60px;
-    /* text-align: center; */
 }
 .about-inner {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
-    margin: 0 auto;
     gap: 80px;
+    margin: 0;
+    justify-content: flex-start;
 }
 .about-inner p {
     font-size: 16px;
     color: #64748B;
     line-height: 30px;
-    margin-left: 40px;
+    margin-bottom: 15px;
+    margin-left: 0;
 }
 .about img {
     width: 400px;
     height: auto;
     border-radius: 8px;
+}
+.about-text {
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -214,7 +219,7 @@ h4 {
 }
 
 
-/* メディアクエリ */
+/* レスポンシブ対応 */
 @media screen and (max-width:767){
     .header {
     padding: 0;
@@ -236,7 +241,6 @@ h4 {
     padding: 60px 0 60px 0;
     }
     .skills-list {
-    /* display: flex; */
     justify-content: center;
     gap: 70px;
     flex-wrap: wrap;
@@ -264,10 +268,8 @@ h4 {
     .about-inner {
     flex-wrap: wrap;
     max-width: 500px;
-    /* margin: 0 auto; */
 }
 .about-inner p {
-    /* margin-left: 40px; */
     margin: 0 auto;
 }
 .nav-btn{
@@ -276,7 +278,6 @@ h4 {
 }
 @media screen and (min-width:768px) and (max-width:1024){
     .skills-list {
-    /* display: flex; */
     justify-content: center;
     gap: 70px;
     flex-wrap: wrap;

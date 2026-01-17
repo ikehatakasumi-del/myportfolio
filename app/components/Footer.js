@@ -1,7 +1,9 @@
 const Footer = () => {
     return (
         <footer className="footer">
-            <small>&copy;2025 IKEHATA KASUMI</small>
+            <div className="container">
+                <small>&copy;2025 IKEHATA KASUMI</small>
+            </div>
         </footer>
     );
 };
