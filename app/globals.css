@@ -22,14 +22,9 @@ html, body {
     /* background: linear-gradient(40deg, #e7e9ef, #8282e4); */
     position: relative;
 }
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .header-text {
-    padding: 180px 30px 90px 60px;
+    padding: 100px 0 80px 0;
+    text-align: center;
 }
 
 .header-text h1 {
@@ -51,8 +46,9 @@ html, body {
 }
 .header-text p {
     font-size: 20px;
-    padding-top: 270px;
+    /* padding-top: 270px; */
     letter-spacing: 7px;
+    margin-top: 40px;
     color: #64748B;
 }
 
@@ -60,7 +56,7 @@ html, body {
     position: absolute;
     top: 20px;
     right: 20px;
-    margin: 8px 30px 0 0;
+    /* margin: 8px 30px 0 0; */
 }
 .nav-list ul {
     display: flex;
@@ -220,23 +216,24 @@ h4 {
     color: white;
     background: #475569;
 }
+.nav-check, .nav-open {
+    display: none;
+}
 
 
 /* レスポンシブ対応 */
-@media screen and (max-width:767){
-    .header {
-    padding: 0;
-    margin-bottom: 70px;
-    }
+@media screen and (max-width:767px){
     .header-text {
-    padding: 180px 0 0 0;
+    padding: 60px 0 20px 0;
     }
     .header-text h1 {
-    font-size: 46px;
+    font-size: 40px;
+    /* margin: 0 auto; */
     }
     .header-text p {
-    font-size: 12px;
-    padding-top: 180px;
+    font-size: 14px;
+    padding-top: 20px;
+    letter-spacing: 2px;
     }
 
     section {
@@ -257,20 +254,20 @@ h4 {
         height: auto;
     }
     .skills-list {
-    justify-content: center;
-    gap: 70px;
-    flex-wrap: wrap;
+        justify-content: center;
+        gap: 70px;
+        flex-wrap: wrap;
     }
     .skills-card {
-    padding: 30px;
-    width: 360px;
+        padding: 30px;
+        width: 360px;
     }
     .skills-card p {
-    font-size: 22px;
-    letter-spacing: 2px;
+        font-size: 16px;
+        letter-spacing: 2px;
     }
     h3 {
-    font-size: 30px;
+        font-size: 30px;
     }
     h2 {
         text-align: center;
@@ -296,8 +293,38 @@ h4 {
         max-width: 100%;
         margin: 0 auto;
     }
-    .nav-btn{
-        padding: 10px;
+
+    /* ハンバーガー */
+    .nav-open {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px; 
+        height: 25px;
+        position: fixed; 
+        top: 20px; 
+        right: 20px; 
+        z-index: 100;
+    }
+    .nav-open span {
+        height: 3px; 
+        width: 100%; 
+        background: #334155;
+        transition: 0.3s;
+    }
+    /* メニューの初期状態（右に隠しておく） */
+    .nav-content {
+        position: fixed;
+        top: 0; right: -100%; /* 画面の外にだす */
+        width: 100%; 
+        height: 100vh;
+        background: #F8FAFA;
+        transition: 0.5s; 
+        z-index: 90;
+    }
+    /* チェックが入ったらメニューを右端（画面内）に戻す */ 
+    .nav-check:checked ~ .nav-content {
+    right: 0;
     }
 }
 @media screen and (min-width:768px) and (max-width:1024){
