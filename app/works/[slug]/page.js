@@ -12,36 +12,37 @@ export default async function ProjectDetail({ params }) {
 
   return (
     <main style={{ padding: "20px" }}>
-      <h1>{project.title}</h1>
-
-      {project.image && (
+      <h3 style={{textAlign:"center"}}>{project.title}</h3>
+      <div style={{textAlign:"center"}}>
+        {project.image && (
         <img
           src={project.image}
           alt={project.title}
-          style={{maxWidth: "100%", height: "auto", marginTop: "20px"}}
+          style={{maxWidth: "100%", height: "auto", margin: "30px 0"}}
         />
       )}
+      </div>
 
-      <div style={{textAlign:"center",marginTop:"20px"}}>
+      <div style={{textAlign:"center",margin:"20px 0 60px 0"}}>
         {project.vercelUrl ? (
           <Link href={project.vercelUrl} className="nav-btn" target="_blank">
             アプリを見る
           </Link>
-        ):(
+        ):( 
           <span style={{visibility:"hidden"}}></span>
         )}
       </div>
 
       <div style={{marginTop:"30px"}}>
-        <h4>概要</h4>
-        <p style={{whiteSpace:"pre-wrap",lineHeight:"1.6"}}>
+        <h4>概 要</h4>
+        <p style={{whiteSpace:"pre-wrap",lineHeight:"1.6",margin:"0 30px"}}>
           {project.description}
         </p>
       </div>
 
-      <div style={{marginTop: "30px" }}>
+      <div style={{marginTop: "30px"}}>
         <h4>{project.contenttitle}</h4>
-        <p style={{whiteSpace: "pre-wrap", lineHeight: "1.6" }}>
+        <p style={{whiteSpace: "pre-wrap", lineHeight: "1.6",margin:"0 30px"}}>
           {project.content}
         </p>
       </div>

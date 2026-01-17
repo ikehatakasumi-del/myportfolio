@@ -226,7 +226,7 @@ h4 {
     .header {
     padding: 0;
     margin-bottom: 70px;
-}
+    }
     .header-text {
     padding: 180px 0 0 0;
     }
@@ -279,14 +279,14 @@ h4 {
         margin: 0 auto;
         width: 90%;
     }
-.about-inner p {
-    margin: 0 auto;
-}
-.about-inner {
-    flex-wrap: wrap;
-    max-width: 100%;
-    justify-content: center;
-    margin: auto;
+    .about-inner p {
+        margin: 0 auto;
+    }
+    .about-inner {
+        flex-wrap: wrap;
+        max-width: 100%;
+        justify-content: center;
+        margin: auto;
     }
     .about-text {
         text-align: left; 
@@ -294,9 +294,9 @@ h4 {
         max-width: 100%;
         margin: 0 auto;
     }
-.nav-btn{
-    padding: 10px;
-}
+    .nav-btn{
+        padding: 10px;
+    }
 }
 @media screen and (min-width:768px) and (max-width:1024){
     .skills-list {
