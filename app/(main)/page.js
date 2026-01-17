@@ -19,12 +19,13 @@ const Home = () => {
                     key={work.slug}
                     href={`/works/${work.slug}`}
                     className="works-item"
+                    style={{textDecoration:"none"}}
                     >
                     {/* <div className="dummy">No Image</div> */}
-                    <WorksCard key={work.slug} work={work}/>
-                    {/* <h3>{work.title}</h3> */}
+                    <WorksCard key={work.slug} work={work} />
                     </Link>
                 ))}
+                
                 </div>
             </div>
         </section>
