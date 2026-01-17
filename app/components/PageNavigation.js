@@ -12,7 +12,8 @@ const PageNavigation = ({currentSlug}) => {
     <div style={{display:"flex", flexWrap:"wrap",justifyContent:"center",gap:"16px"}}>
         {prevWork ? (
         <Link href={`/works/${prevWork.slug}`} className="nav-btn">
-            ← {prevWork.title}
+            ← Prev
+            {/* {prevWork.title} */}
         </Link>
         ):(
             <span className="nav-btn" style={{visibility:"hidden"}}></span>
@@ -22,7 +23,8 @@ const PageNavigation = ({currentSlug}) => {
         </Link>
         {nextWork ? (
         <Link href={`/works/${nextWork.slug}`} className="nav-btn">
-            {nextWork.title} →
+            {/* {nextWork.title}  */}
+            Next →
         </Link>
         ):(
             <span className="nav-btn" style={{visibility:"hidden"}}></span>
