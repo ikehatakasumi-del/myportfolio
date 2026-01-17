@@ -163,6 +163,7 @@ h4 {
 }
 .skills-card p {
     font-size: 14px;
+    margin: 0 auto;
     letter-spacing: 2px;
     color: #2F3537;
 }
@@ -186,7 +187,8 @@ h4 {
     margin-left: 0;
 }
 .about img {
-    width: 400px;
+    display: block;
+    max-width: 400px;
     height: auto;
     border-radius: 8px;
 }
@@ -274,16 +276,24 @@ h4 {
         font-size: 40px;
     }
     .about img {
-        margin: auto;
-        width: 100%;
+        margin: 0 auto;
+        width: 90%;
     }
-    .about-inner {
-    flex-wrap: wrap;
-    max-width: 500px;
-}
 .about-inner p {
     margin: 0 auto;
 }
+.about-inner {
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+    margin: auto;
+    }
+    .about-text {
+        text-align: left; 
+        width: fit-content;
+        max-width: 100%;
+        margin: 0 auto;
+    }
 .nav-btn{
     padding: 10px;
 }
@@ -325,7 +335,14 @@ h4 {
     }
     .about-inner {
     flex-wrap: wrap;
-    max-width: 500px;
+    max-width: 100%;
+    justify-content: center;
     margin: auto;
-}
+    }
+    .about-text {
+        text-align: left; 
+        width: fit-content;
+        max-width: 100%;
+        margin: 0 auto;
+    }
 }
