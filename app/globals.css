@@ -331,6 +331,11 @@ h4 {
         display: flex;
         flex-direction: column;
     }
+    .nav-list a{
+        display: block;
+        padding: 20px 0;
+        width: 100%;
+    }
     /* チェックが入ったらメニューを右端（画面内）に戻す */ 
     .nav-check:checked ~ .nav-content {
     right: 0;
