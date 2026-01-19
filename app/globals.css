@@ -152,13 +152,11 @@ h4 {
     display: flex;
     justify-content: flex-start;
     gap: 20px;
-    /* flex-wrap: wrap; */
 }
 .skills-card {
     background: #fff;
     padding: 30px;
-    width: calc((100% - 40px) / 3); /* (100% - 20px * 2) / 3 */
-    /* width: 230px; */
+    width: calc((100% - 40px) / 3); 
     border: 6px solid #E2E8F0;
     border-radius: 8px;
 }
@@ -341,7 +339,7 @@ h4 {
     }
     /* チェックが入ったらメニューを右端（画面内）に戻す */ 
     .nav-check:checked ~ .nav-content {
-    right: 0;
+        right: 0;
     }
     /* 1本目を45度回転させて位置を調整 */
     /* rotate:線を斜めに ,nth-child(n):何番目の線かを指定*/

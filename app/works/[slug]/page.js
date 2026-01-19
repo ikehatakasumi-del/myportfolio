@@ -35,14 +35,14 @@ export default async function ProjectDetail({ params }) {
 
       <div style={{marginTop:"30px"}}>
         <h4>概 要</h4>
-        <p style={{whiteSpace:"pre-wrap",lineHeight:"1.6",margin:"0 30px"}}>
+        <p style={{whiteSpace:"pre-wrap",lineHeight:"1.6",margin:"0 auto",maxWidth:"800px",}}>
           {project.description}
         </p>
       </div>
 
       <div style={{marginTop: "30px"}}>
         <h4>{project.contenttitle}</h4>
-        <p style={{whiteSpace: "pre-wrap", lineHeight: "1.6",margin:"0 30px"}}>
+        <p style={{whiteSpace: "pre-wrap", lineHeight: "1.6",margin:"0 auto",maxWidth:"800px",}}>
           {project.content}
         </p>
       </div>
