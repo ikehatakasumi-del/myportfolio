@@ -11,7 +11,7 @@ export default async function ProjectDetail({ params }) {
   }
 
   return (
-    <main style={{ padding: "20px" }}>
+    <main style={{padding:"20px"}}>
       {/* <PageNavigation currentSlug={slug}/> */}
       <h3 style={{textAlign:"center"}}>{project.title}</h3>
       <div style={{textAlign:"center"}}>
@@ -19,7 +19,7 @@ export default async function ProjectDetail({ params }) {
         <img
           src={project.image}
           alt={project.title}
-          style={{maxWidth: "100%", height: "auto", margin: "30px 0"}}
+          style={{maxWidth: "100%",height: "auto", margin: "30px 0"}}
         />
       )}
       </div>
