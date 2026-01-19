@@ -9,6 +9,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='ja'>
       <head>
+        <meta name="robots" content="noindex"/>
         <link
           rel="preconnect"
           href="https://fonts.googleapis.com"

@@ -9,26 +9,28 @@ const PageNavigation = ({currentSlug}) => {
     const nextWork = works[currentIndex + 1];
 
     return(
-    <div style={{display:"flex", flexWrap:"wrap",justifyContent:"center",gap:"16px"}}>
-        {prevWork ? (
-        <Link href={`/works/${prevWork.slug}`} className="nav-btn">
-            ← Prev
-            {/* {prevWork.title} */}
-        </Link>
-        ):(
-            <span className="nav-btn" style={{visibility:"hidden"}}></span>
-        )}
-        <Link href="/" className="nav-btn">
-            Home
-        </Link>
-        {nextWork ? (
-        <Link href={`/works/${nextWork.slug}`} className="nav-btn">
-            {/* {nextWork.title}  */}
-            Next →
-        </Link>
-        ):(
-            <span className="nav-btn" style={{visibility:"hidden"}}></span>
-        )}
+    <div style={{display:"flex", flexWrap:"wrap",justifyContent:"center",margin:"30px 0"}}>
+        <div style={{flex:"1",textAlign:"left"}}>
+            {prevWork && (
+            <Link href={`/works/${prevWork.slug}`} className="nav-btn">
+                ← Prev
+            </Link>
+            )}
+        </div>
+        {/* flex:1親の余ったスペースを自分たちで分け合う３等分する */}
+        <div style={{flex:"1",textAlign:"center"}}>
+            <Link href="/" className="nav-btn">
+                Home
+            </Link>
+        </div>
+        {/* つぎがない場合は空のdivを置いて場所を確保する */}
+        <div style={{flex:"1",textAlign:"right"}}>
+            {nextWork && (
+            <Link href={`/works/${nextWork.slug}`} className="nav-btn">
+                Next →
+            </Link>
+            )}
+        </div>
     </div>
     )
 };

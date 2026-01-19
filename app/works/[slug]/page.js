@@ -12,6 +12,7 @@ export default async function ProjectDetail({ params }) {
 
   return (
     <main style={{ padding: "20px" }}>
+      {/* <PageNavigation currentSlug={slug}/> */}
       <h3 style={{textAlign:"center"}}>{project.title}</h3>
       <div style={{textAlign:"center"}}>
         {project.image && (
@@ -22,7 +23,6 @@ export default async function ProjectDetail({ params }) {
         />
       )}
       </div>
-
       <div style={{textAlign:"center",margin:"20px 0 60px 0"}}>
         {project.vercelUrl ? (
           <Link href={project.vercelUrl} className="nav-btn" target="_blank">
