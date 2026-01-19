@@ -132,12 +132,12 @@ h4 {
     background: #FFFFFF;
     border-radius: 8px;
     /* border: 6px solid #E2E8F0; */
-    border: 6px solid #c2d4ea;
+    border: 6px solid #e8edf4;
     margin-bottom: 70px;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 .works-item:hover {
-    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.5);
     transform: translateY(-6x);
 }
 .works-list p {
@@ -145,11 +145,11 @@ h4 {
     font-size: 20px;
 }
 .works-image {
-  width: 100%;
-  height: 400px;
-  display: block;
+    width: 100%;
+    height: 400px;
+    display: block;
   /* 画像がゆがむのを防ぐ */
-  object-fit: contain;
+    object-fit: contain;
 }
 
 /* skills */
@@ -225,11 +225,14 @@ h4 {
     text-decoration: none;
     font-weight: 600;
     box-shadow: 4px 2px 2px #85888a;
+    transition: all 0.3s;
+    display: inline-block;
 }
 .nav-btn:hover {
-    color: white;
-    background: #475569;
+    transform: translateY(-3px);
+    opacity: 0.8;
 }
+
 /* ↓これはメインの */
 .nav-check, .nav-open {
     display: none;
