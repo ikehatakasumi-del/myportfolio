@@ -21,6 +21,9 @@ html, body {
     padding: 30px 0;
     /* background: linear-gradient(40deg, #e7e9ef, #8282e4); */
     position: relative;
+    height:80vh;
+    display: grid;
+    place-content: center;
 }
 .header-text {
     padding: 100px 0 80px 0;
@@ -47,7 +50,6 @@ html, body {
 }
 .header-text p {
     font-size: 20px;
-    /* padding-top: 270px; */
     letter-spacing: 7px;
     margin-top: 40px;
     color: #64748B;
@@ -138,6 +140,7 @@ h4 {
   width: 100%;
   height: 400px;
   display: block;
+  /* 画像がゆがむのを防ぐ */
   object-fit: contain;
 }
 
