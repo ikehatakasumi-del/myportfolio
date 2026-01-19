@@ -325,8 +325,11 @@ h4 {
         transition: 0.5s; 
         z-index: 90;
 
-        display: flex;
         justify-content: center;
+    }
+    .nav-list ul {
+        display: flex;
+        flex-direction: column;
     }
     /* チェックが入ったらメニューを右端（画面内）に戻す */ 
     .nav-check:checked ~ .nav-content {
