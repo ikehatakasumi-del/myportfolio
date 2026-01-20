@@ -19,7 +19,7 @@ export default async function ProjectDetail({ params }) {
         <img
           src={project.image}
           alt={project.title}
-          style={{maxWidth: "100%",height: "auto", margin: "30px 0"}}
+          style={{maxWidth: "100%",height:"300px", margin:"30px 0"}}
         />
       )}
       </div>
@@ -34,14 +34,14 @@ export default async function ProjectDetail({ params }) {
       </div>
 
       <div style={{marginTop:"30px"}}>
-        <h4>概 要</h4>
+        <h4 style={{fontSize:"22px"}}>概 要</h4>
         <p style={{whiteSpace:"pre-wrap",lineHeight:"1.6",margin:"0 auto",maxWidth:"800px",}}>
           {project.description}
         </p>
       </div>
 
       <div style={{marginTop: "30px"}}>
-        <h4>{project.contenttitle}</h4>
+        <h4 style={{fontSize:"22px"}}>{project.contenttitle}</h4>
         <p style={{whiteSpace: "pre-wrap", lineHeight: "1.6",margin:"0 auto",maxWidth:"800px",}}>
           {project.content}
         </p>

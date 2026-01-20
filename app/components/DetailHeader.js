@@ -1,7 +1,7 @@
 const DetailHeader = () => {
     return (
         <>
-        <h4>作品詳細ページ</h4>
+        <h4 style={{fontSize:"22px"}}>作品詳細ページ</h4>
         </>
     );
 };
