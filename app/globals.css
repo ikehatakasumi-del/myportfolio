@@ -4,6 +4,8 @@ body {
     margin: 0 auto;
     font-family: 'Noto Sans JP', sans-serif;
     /* background: linear-gradient(40deg, #e7e9ef, #dcdceb); */
+    /* background: linear-gradient(135deg, #e3abed 20%, #ffffff 100%); */
+    background-attachment: fixed;
 }
 html, body {
   overflow-x: hidden;
@@ -135,8 +137,9 @@ h4 {
     height: auto;
     background: #FFFFFF;
     border-radius: 8px;
-    /* border: 6px solid #E2E8F0; */
-    border: 6px solid #e8edf4;
+    border: 6px solid #E2E8F0;
+    /* border: 6px solid #e8edf4; */
+     /* border: 6px solid #F8AFA6; */
     margin-bottom: 70px;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
@@ -150,7 +153,7 @@ h4 {
 }
 .works-image {
     width: 100%;
-    height: 400px;
+    height: 300px;
     display: block;
   /* 画像がゆがむのを防ぐ */
     object-fit: contain;

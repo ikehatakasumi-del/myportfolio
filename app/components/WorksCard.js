@@ -5,11 +5,12 @@ const WorksCard = ({work}) => {
             <Image
             src={work.image}
             alt={work.title}
-            width={400}
-            height={300}
+            width={300} //400
+            height={200} //300
             className="works-image"
             />
             <p>{work.title}</p>
+            {/* <p style={{border:"2px solid #A53DFF",borderRadius:"6px",color:"black",fontWeight:"normal",fontSize:"16px",display:"inline-block",padding:"6px",margin:"0 auto"}}>View Project</p> */}
         </div>
     );
 };

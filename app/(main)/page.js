@@ -19,10 +19,10 @@ const Home = () => {
                     key={work.slug}
                     href={`/works/${work.slug}`}
                     className="works-item"
-                    style={{textDecoration:"none",color:"#64748B",fontWeight:"bold"}}
+                    style={{textDecoration:"none",color:"#15181c",fontWeight:"bold"}}
                     >
-                    {/* <div className="dummy">No Image</div> */}
                     <WorksCard key={work.slug} work={work} />
+                    {/* <p style={{border:"2px solid #5959c0",borderRadius:"6px",display:"block",width:"120px",margin:"0 auto",fontSize:"18px",fontWeight:"normal",padding:"2px"}}>View project</p> */}
                     </Link>
                 ))}
                 
