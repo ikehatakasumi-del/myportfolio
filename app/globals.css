@@ -3,7 +3,7 @@ body {
     width: 100%;
     margin: 0 auto;
     font-family: 'Noto Sans JP', sans-serif;
-    /* background: linear-gradient(40deg, #e7e9ef, #8282e4); */
+    /* background: linear-gradient(40deg, #e7e9ef, #dcdceb); */
 }
 html, body {
   overflow-x: hidden;
@@ -37,7 +37,8 @@ html, body {
     letter-spacing: 1rem;
     font-weight: 900;
     text-align: center;
-    font-family: 'Playfair Display', sans-serif;
+    /* font-family: 'Playfair Display', sans-serif; */
+    font-family: "Roboto", sans-serif;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 2s ease forwards;
@@ -78,7 +79,8 @@ html, body {
     text-decoration: none;
     color: #2F3537;
     font-size: 1rem;
-    font-family: 'Playfair Display', sans-serif;
+    /* font-family: 'Playfair Display', sans-serif; */
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
 }
 .nav-list ul li a:hover {
@@ -94,7 +96,8 @@ h2 {
     color: #334155;
     font-size: 50px;
     letter-spacing: 3px;
-    font-family: 'Playfair Display', sans-serif;
+    /* font-family: 'Playfair Display', sans-serif; */
+    font-family: "Roboto", sans-serif;
     line-height: 1.2;
 }
 
@@ -104,7 +107,8 @@ h3 {
     letter-spacing: 3px;
     text-align: center;
     padding-bottom: 20px;
-    font-family: 'Playfair Display', sans-serif;
+    /* font-family: 'Playfair Display', sans-serif; */
+    font-family: "Roboto", sans-serif;
 }
 h4 {
     font-size: 30px;
