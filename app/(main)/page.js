@@ -29,7 +29,6 @@ const Home = () => {
                 </div>
             </div>
         </section>
-
         <section className="skills" id="skills">
             <div className="container">
                 <h2>Skills</h2>

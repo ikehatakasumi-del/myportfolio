@@ -3,8 +3,8 @@ body {
     width: 100%;
     margin: 0 auto;
     font-family: 'Noto Sans JP', sans-serif;
-    /* background: linear-gradient(40deg, #e7e9ef, #dcdceb); */
-    /* background: linear-gradient(135deg, #e3abed 20%, #ffffff 100%); */
+    /* background: linear-gradient(40deg, #F5EFFF, #dcdceb); */
+    /* background: linear-gradient(135deg, #c6b1de 20%, #ffffff 100%); */
     background-attachment: fixed;
 }
 html, body {
@@ -34,10 +34,12 @@ html, body {
 
 .header-text h1 {
     color: #334155;
+    /* color: black; */
     font-size: 78px;
     margin-bottom: 90px;
     letter-spacing: 1rem;
-    font-weight: 900;
+    /* font-weight: 500;  */
+    font-weight:900;
     text-align: center;
     /* font-family: 'Playfair Display', sans-serif; */
     font-family: "Roboto", sans-serif;
@@ -95,7 +97,8 @@ section {
 }
 h2 {
     margin: 0 0 60px 0;
-    color: #334155;
+    /* color: #334155; */
+    color: black;
     font-size: 50px;
     letter-spacing: 3px;
     /* font-family: 'Playfair Display', sans-serif; */
@@ -137,9 +140,9 @@ h4 {
     height: auto;
     background: #FFFFFF;
     border-radius: 8px;
-    border: 6px solid #E2E8F0;
-    /* border: 6px solid #e8edf4; */
-     /* border: 6px solid #F8AFA6; */
+    /* border: 6px solid #E2E8F0; */
+    border: 6px solid #ccc;
+     /* border: 2px solid #F8AFA6; */
     margin-bottom: 70px;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
