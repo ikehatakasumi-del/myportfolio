@@ -1,5 +1,5 @@
 ポートフォリオサイト
-vercelUrl　"https://myportfolio-two-mu-16.vercel.app/"
+
 
 ポートフォリオサイト工夫した点
 
