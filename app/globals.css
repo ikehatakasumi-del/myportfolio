@@ -192,6 +192,7 @@ html.no-transition .nav-content ul {
   .nav-content {
     height: auto;
     background: none;
+     pointer-events: auto; 
   }
   .nav-content ul {
     transform: none;
