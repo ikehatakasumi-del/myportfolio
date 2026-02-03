@@ -25,7 +25,7 @@ const Home = () => {
                     {/* <p style={{border:"2px solid #5959c0",borderRadius:"6px",display:"block",width:"120px",margin:"0 auto",fontSize:"18px",fontWeight:"normal",padding:"2px"}}>View project</p> */}
                     </Link>
                 ))}
-                
+
                 </div>
             </div>
         </section>
@@ -56,8 +56,27 @@ const Home = () => {
                     <p>
                         Reactを用いた基本的なアプリ開発を学習しています。<br/>
                         コンポーネント化やprops、stateの扱いを理解し、
-                        シンプルな機能を持つアプリを作成しています。<br/>
-                        コードの役割を意識した実装を心がけています。
+                        Todoリストやお天気アプリなどシンプルな機能を持つミニアプリを作成しています。<br/>
+                    </p>
+                </div>
+                <div className="skills-card">
+                    <h3>Next.js</h3>
+                    <p>
+                        本ポートフォリオの制作に使用しました。<br/>
+                        特に動的なルーティングの実装に注力し、データの追加や変更に柔軟に対応できるサイト構成を意識しました。
+                    </p>
+                </div>
+                <div className="skills-card">
+                    <h3>TailwindCSS</h3>
+                    <p>
+                        現在、効率的なデザイン実装のために学習中です。<br/>
+                        CSSファイルを別で作ることなく、HTML上で直接スタイルを調整できるため、レスポンシブ対応などのレイアウト構築をスピーディーに行えるスキルの習得を目指しています。
+                    </p>
+                </div>
+                <div className="skills-card">
+                    <h3>aaaa</h3>
+                    <p>
+                        aaaaa
                     </p>
                 </div>
             </div>

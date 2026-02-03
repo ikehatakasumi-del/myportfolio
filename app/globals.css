@@ -192,7 +192,7 @@ html.no-transition .nav-content ul {
   .nav-content {
     height: auto;
     background: none;
-     pointer-events: auto; 
+     pointer-events: auto;
   }
   .nav-content ul {
     transform: none;
@@ -285,10 +285,11 @@ h4 {
   display: flex;
   justify-content: flex-start;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .skills-card {
   background: #fff;
-  padding: 30px;
+  padding: 25px;
   width: calc((100% - 40px) / 3);
   /* border: 6px solid #E2E8F0; */
   border: 6px solid #c2d4ea;
